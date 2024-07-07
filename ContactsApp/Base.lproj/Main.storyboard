@@ -19,14 +19,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Kişiler" id="QwG-pa-fb2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1wf-KR-yGa"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1wf-KR-yGa">
+                            <connections>
+                                <segue destination="ttq-gb-GS6" kind="show" id="fJS-39-gvQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="792.55813953488371" y="5.7939914163090132"/>
         </scene>
-        <!--Kisi Kayit-->
+        <!--Kişi Kayıt-->
         <scene sceneID="V01-5V-nWt">
             <objects>
                 <viewController id="ttq-gb-GS6" customClass="KisiKayit" customModule="ContactsApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,6 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="aIN-Hd-CLO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Kişi Kayıt" id="kRp-4E-Bf3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZq-ku-tPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
