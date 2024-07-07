@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1E95F54C2C3B215D00264476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95F54B2C3B215D00264476 /* AppDelegate.swift */; };
 		1E95F54E2C3B215D00264476 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95F54D2C3B215D00264476 /* SceneDelegate.swift */; };
-		1E95F5502C3B215D00264476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95F54F2C3B215D00264476 /* ViewController.swift */; };
+		1E95F5502C3B215D00264476 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95F54F2C3B215D00264476 /* Anasayfa.swift */; };
 		1E95F5532C3B215D00264476 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1E95F5522C3B215D00264476 /* Base */; };
 		1E95F5552C3B215E00264476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E95F5542C3B215E00264476 /* Assets.xcassets */; };
 		1E95F5582C3B215E00264476 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1E95F5572C3B215E00264476 /* Base */; };
+		1E95F5642C3B231400264476 /* KisiKayıt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95F5632C3B231400264476 /* KisiKayıt.swift */; };
+		1E95F5662C3B233E00264476 /* KisiDetay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95F5652C3B233E00264476 /* KisiDetay.swift */; };
+		1E95F5682C3B245B00264476 /* kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95F5672C3B245B00264476 /* kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E95F5482C3B215D00264476 /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E95F54B2C3B215D00264476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E95F54D2C3B215D00264476 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E95F54F2C3B215D00264476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E95F54F2C3B215D00264476 /* Anasayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfa.swift; sourceTree = "<group>"; };
 		1E95F5522C3B215D00264476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E95F5542C3B215E00264476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E95F5572C3B215E00264476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E95F5592C3B215E00264476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E95F5632C3B231400264476 /* KisiKayıt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KisiKayıt.swift"; sourceTree = "<group>"; };
+		1E95F5652C3B233E00264476 /* KisiDetay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiDetay.swift; sourceTree = "<group>"; };
+		1E95F5672C3B245B00264476 /* kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,48 @@
 			children = (
 				1E95F54B2C3B215D00264476 /* AppDelegate.swift */,
 				1E95F54D2C3B215D00264476 /* SceneDelegate.swift */,
-				1E95F54F2C3B215D00264476 /* ViewController.swift */,
+				1E95F5602C3B225A00264476 /* UI */,
+				1E95F55F2C3B225400264476 /* Data */,
+				1E95F54F2C3B215D00264476 /* Anasayfa.swift */,
 				1E95F5512C3B215D00264476 /* Main.storyboard */,
 				1E95F5542C3B215E00264476 /* Assets.xcassets */,
 				1E95F5562C3B215E00264476 /* LaunchScreen.storyboard */,
 				1E95F5592C3B215E00264476 /* Info.plist */,
 			);
 			path = ContactsApp;
+			sourceTree = "<group>";
+		};
+		1E95F55F2C3B225400264476 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1E95F5612C3B226E00264476 /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1E95F5602C3B225A00264476 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1E95F5622C3B227D00264476 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1E95F5612C3B226E00264476 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1E95F5672C3B245B00264476 /* kisiler.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1E95F5622C3B227D00264476 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E95F5632C3B231400264476 /* KisiKayıt.swift */,
+				1E95F5652C3B233E00264476 /* KisiDetay.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E95F5502C3B215D00264476 /* ViewController.swift in Sources */,
+				1E95F5642C3B231400264476 /* KisiKayıt.swift in Sources */,
+				1E95F5662C3B233E00264476 /* KisiDetay.swift in Sources */,
+				1E95F5502C3B215D00264476 /* Anasayfa.swift in Sources */,
+				1E95F5682C3B245B00264476 /* kisiler.swift in Sources */,
 				1E95F54C2C3B215D00264476 /* AppDelegate.swift in Sources */,
 				1E95F54E2C3B215D00264476 /* SceneDelegate.swift in Sources */,
 			);
