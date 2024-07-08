@@ -37,10 +37,46 @@
                     <view key="view" contentMode="scaleToFill" id="A1s-dm-Ypc">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kisi Adı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TPy-hf-TaX">
+                                <rect key="frame" x="50" y="211.66666666666666" width="330" height="45.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kisi Tel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-1C-sKS">
+                                <rect key="frame" x="50" y="307.33333333333331" width="330" height="45.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59O-U5-EGA">
+                                <rect key="frame" x="156" y="403" width="118" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonKaydet:" destination="ttq-gb-GS6" eventType="touchUpInside" id="NkC-CN-gXn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aIN-Hd-CLO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="59O-U5-EGA" firstAttribute="top" secondItem="AKR-1C-sKS" secondAttribute="bottom" constant="50" id="6eV-ol-MPT"/>
+                            <constraint firstItem="aIN-Hd-CLO" firstAttribute="trailing" secondItem="TPy-hf-TaX" secondAttribute="trailing" constant="50" id="EEt-Qd-7q7"/>
+                            <constraint firstItem="TPy-hf-TaX" firstAttribute="leading" secondItem="aIN-Hd-CLO" secondAttribute="leading" constant="50" id="ffz-f5-WmQ"/>
+                            <constraint firstItem="AKR-1C-sKS" firstAttribute="leading" secondItem="aIN-Hd-CLO" secondAttribute="leading" constant="50" id="l02-HE-lxt"/>
+                            <constraint firstItem="59O-U5-EGA" firstAttribute="centerX" secondItem="A1s-dm-Ypc" secondAttribute="centerX" id="vUT-mo-Nfp"/>
+                            <constraint firstItem="TPy-hf-TaX" firstAttribute="top" secondItem="aIN-Hd-CLO" secondAttribute="top" constant="50" id="vhG-G8-k8D"/>
+                            <constraint firstItem="AKR-1C-sKS" firstAttribute="top" secondItem="TPy-hf-TaX" secondAttribute="bottom" constant="50" id="ylc-eZ-bNB"/>
+                            <constraint firstItem="aIN-Hd-CLO" firstAttribute="trailing" secondItem="AKR-1C-sKS" secondAttribute="trailing" constant="50" id="yvZ-Zc-Oa6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kişi Kayıt" id="kRp-4E-Bf3"/>
+                    <connections>
+                        <outlet property="tfKisiAd" destination="TPy-hf-TaX" id="LCz-gD-qYS"/>
+                        <outlet property="tfKisiTel" destination="AKR-1C-sKS" id="xyj-a9-Zax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZq-ku-tPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
