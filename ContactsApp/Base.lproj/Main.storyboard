@@ -25,6 +25,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="SlK-6C-5CB" kind="show" id="Qqn-RW-1vA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,9 +92,44 @@
                     <view key="view" contentMode="scaleToFill" id="gqq-2R-wUt">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kisi Adı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4jH-86-UBC">
+                                <rect key="frame" x="50" y="211.66666666666666" width="330" height="45.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kisi Tel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CH-jF-kl5">
+                                <rect key="frame" x="50" y="307.33333333333331" width="330" height="45.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHY-gu-uRB">
+                                <rect key="frame" x="143.66666666666669" y="403" width="142.66666666666669" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Güncelle">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonKaydet:" destination="ttq-gb-GS6" eventType="touchUpInside" id="fzr-qz-zE2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="niy-gu-Tac"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="niy-gu-Tac" firstAttribute="trailing" secondItem="4jH-86-UBC" secondAttribute="trailing" constant="50" id="4dz-Gf-GXJ"/>
+                            <constraint firstItem="3CH-jF-kl5" firstAttribute="top" secondItem="4jH-86-UBC" secondAttribute="bottom" constant="50" id="CXk-BG-p2M"/>
+                            <constraint firstItem="UHY-gu-uRB" firstAttribute="top" secondItem="3CH-jF-kl5" secondAttribute="bottom" constant="50" id="Ncd-We-eyR"/>
+                            <constraint firstItem="3CH-jF-kl5" firstAttribute="top" secondItem="4jH-86-UBC" secondAttribute="bottom" constant="50" id="Yv9-fu-vny"/>
+                            <constraint firstItem="niy-gu-Tac" firstAttribute="trailing" secondItem="3CH-jF-kl5" secondAttribute="trailing" constant="50" id="ZMP-IW-zaL"/>
+                            <constraint firstItem="4jH-86-UBC" firstAttribute="top" secondItem="niy-gu-Tac" secondAttribute="top" constant="50" id="dbc-WD-KqQ"/>
+                            <constraint firstItem="4jH-86-UBC" firstAttribute="leading" secondItem="niy-gu-Tac" secondAttribute="leading" constant="50" id="qUf-Qc-9fG"/>
+                            <constraint firstItem="UHY-gu-uRB" firstAttribute="top" secondItem="3CH-jF-kl5" secondAttribute="bottom" constant="50" id="qW8-W2-taa"/>
+                            <constraint firstItem="UHY-gu-uRB" firstAttribute="centerX" secondItem="gqq-2R-wUt" secondAttribute="centerX" id="s0B-q0-LFP"/>
+                            <constraint firstItem="3CH-jF-kl5" firstAttribute="leading" secondItem="niy-gu-Tac" secondAttribute="leading" constant="50" id="wcC-Yk-Max"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Z2B-31-jOq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9u-Lh-vIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
