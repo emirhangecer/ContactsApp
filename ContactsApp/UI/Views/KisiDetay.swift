@@ -9,10 +9,18 @@ import UIKit
 
 class KisiDetay: UIViewController {
 
+    
+    @IBOutlet weak var tfKisiAd: UITextField!
+    
+    
+    @IBOutlet weak var tfKisiTel: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
-   
+    
+    @IBAction func buttonGuncelle(_ sender: Any) {
+    }
+    
 }

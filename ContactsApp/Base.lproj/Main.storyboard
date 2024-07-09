@@ -110,6 +110,7 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="buttonGuncelle:" destination="SlK-6C-5CB" eventType="touchUpInside" id="TVf-Ap-TMz"/>
                                     <action selector="buttonKaydet:" destination="ttq-gb-GS6" eventType="touchUpInside" id="fzr-qz-zE2"/>
                                 </connections>
                             </button>
@@ -130,6 +131,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Z2B-31-jOq"/>
+                    <connections>
+                        <outlet property="tfKisiAd" destination="4jH-86-UBC" id="InL-w9-ek2"/>
+                        <outlet property="tfKisiTel" destination="3CH-jF-kl5" id="izA-dL-SeR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9u-Lh-vIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
