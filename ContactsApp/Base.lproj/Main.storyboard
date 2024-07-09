@@ -26,7 +26,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="SlK-6C-5CB" kind="show" id="Qqn-RW-1vA"/>
+                        <segue destination="SlK-6C-5CB" kind="show" identifier="toDetay" id="Qqn-RW-1vA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
