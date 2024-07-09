@@ -24,13 +24,13 @@ class KisiKayit: UIViewController {
         
         if let ka = tfKisiAd.text , let kt = tfKisiTel.text {
             
-            kaydet(tfKisiAd: ka , tfKisiTel: kt)
+            kaydet(kisi_ad: ka , kisi_tel: kt)
         }
         
     }
     
-    func kaydet(tfKisiAd: String , tfKisiTel: String){
-        print("Kişi Kaydet: \(tfKisiAd) - \(tfKisiTel)")
+    func kaydet(kisi_ad: String , kisi_tel: String){
+        print("Kişi Kaydet: \(kisi_ad) - \(kisi_tel)")
     }
     
 }
