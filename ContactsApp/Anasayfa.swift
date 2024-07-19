@@ -15,6 +15,9 @@ class Anasayfa: UIViewController {
     }
 
     @IBAction func buttonDetay(_ sender: Any) {
+        let kisi = Kisiler(kisi_id: 1, kisi_ad: "Emirhan", kisi_tel: "1111")
+        
+        performSegue(withIdentifier: "toDetay", sender: kisi)
     }
     
 }
