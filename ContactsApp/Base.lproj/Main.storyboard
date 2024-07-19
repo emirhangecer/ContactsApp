@@ -23,6 +23,7 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="buttonDetay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vy6-y8-FQa"/>
                                     <action selector="buttonKaydet:" destination="ttq-gb-GS6" eventType="touchUpInside" id="Dzf-LU-qty"/>
                                 </connections>
                             </button>
@@ -162,7 +163,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Chy-wp-cr1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pf4-h8-cAf">
-                        <rect key="frame" x="0.0" y="59" width="430" height="97"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="102.66666666666666"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

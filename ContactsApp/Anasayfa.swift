@@ -14,6 +14,8 @@ class Anasayfa: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonDetay(_ sender: Any) {
+    }
+    
 }
 
