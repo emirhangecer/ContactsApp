@@ -22,7 +22,11 @@ class Anasayfa: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay"{
-            
+            if let kisi = sender as? Kisiler{
+                let gidilecekVC = segue.destination as! KisiDetay
+                
+                gidilecekVC.kisi = kisi
+            }
         }
     }
     
