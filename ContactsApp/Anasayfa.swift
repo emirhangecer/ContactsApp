@@ -20,5 +20,11 @@ class Anasayfa: UIViewController {
         performSegue(withIdentifier: "toDetay", sender: kisi)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetay"{
+            
+        }
+    }
+    
 }
 
