@@ -27,12 +27,22 @@
                                     <action selector="buttonKaydet:" destination="ttq-gb-GS6" eventType="touchUpInside" id="Dzf-LU-qty"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nec-Fv-cdH">
+                                <rect key="frame" x="0.0" y="162" width="430" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aV9-Vd-lUW"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1sn-fA-Iiu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Grn-nM-Qjo"/>
+                            <constraint firstItem="nec-Fv-cdH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ope-HM-Nbk"/>
+                            <constraint firstItem="nec-Fv-cdH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sir-V6-4n8"/>
                             <constraint firstItem="1sn-fA-Iiu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZPS-n9-Rlz"/>
+                            <constraint firstItem="nec-Fv-cdH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dxa-eB-Ih6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kişiler" id="QwG-pa-fb2">
@@ -43,6 +53,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="nec-Fv-cdH" id="1QO-gx-xxG"/>
                         <segue destination="SlK-6C-5CB" kind="show" identifier="toDetay" id="Qqn-RW-1vA"/>
                     </connections>
                 </viewController>

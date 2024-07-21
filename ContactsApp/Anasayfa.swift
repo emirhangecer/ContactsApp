@@ -7,11 +7,14 @@
 
 import UIKit
 
-class Anasayfa: UIViewController {
+class Anasayfa: UIViewController, UISearchBarDelegate {
 
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        searchBar.delegate = self
     }
 
     @IBAction func buttonDetay(_ sender: Any) {
@@ -28,6 +31,9 @@ class Anasayfa: UIViewController {
                 gidilecekVC.kisi = kisi
             }
         }
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("Kisi Ara: \(searchText)")
     }
     
 }
