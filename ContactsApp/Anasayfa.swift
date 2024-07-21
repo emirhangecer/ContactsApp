@@ -62,5 +62,11 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
         return hucre
             
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let kisi = kisilerListesi[indexPath.row]
+        print("\(kisi.kisi_ad!)seçildi")
+        
+    }
 }
 
