@@ -12,6 +12,8 @@ class Anasayfa: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBOutlet weak var kisilerTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self

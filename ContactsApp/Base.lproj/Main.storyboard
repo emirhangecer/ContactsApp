@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nec-Fv-cdH">
-                                <rect key="frame" x="0.0" y="161.66666666666666" width="430" height="56"/>
+                                <rect key="frame" x="0.0" y="162" width="430" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="aV9-Vd-lUW"/>
@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="217.66666666666669" width="430" height="680.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kisilerHucre" id="CMu-sj-3pU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kisilerHucre" id="CMu-sj-3pU" customClass="KisilerHucre" customModule="ContactsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="430" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CMu-sj-3pU" id="EM6-DC-6tI">
@@ -57,6 +57,10 @@
                                                 <constraint firstItem="bRd-cF-7bF" firstAttribute="leading" secondItem="EM6-DC-6tI" secondAttribute="leadingMargin" constant="16" id="ue7-3x-0Sf"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelKisiAd" destination="w8X-8a-TaK" id="keh-6G-bdp"/>
+                                            <outlet property="labelKisiTel" destination="oeY-xQ-dqq" id="GD3-iP-hlj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -81,6 +85,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="kisilerTableView" destination="y2v-Zp-VNf" id="IMS-69-h0i"/>
                         <outlet property="searchBar" destination="nec-Fv-cdH" id="1QO-gx-xxG"/>
                         <segue destination="SlK-6C-5CB" kind="show" identifier="toDetay" id="Qqn-RW-1vA"/>
                     </connections>
