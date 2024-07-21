@@ -16,33 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sn-fA-Iiu">
-                                <rect key="frame" x="163.66666666666666" y="441.66666666666669" width="102.99999999999997" height="49"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Detay">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonDetay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vy6-y8-FQa"/>
-                                    <action selector="buttonKaydet:" destination="ttq-gb-GS6" eventType="touchUpInside" id="Dzf-LU-qty"/>
-                                </connections>
-                            </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nec-Fv-cdH">
-                                <rect key="frame" x="0.0" y="162" width="430" height="56"/>
+                                <rect key="frame" x="0.0" y="161.66666666666666" width="430" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="aV9-Vd-lUW"/>
                                 </connections>
                             </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y2v-Zp-VNf">
+                                <rect key="frame" x="0.0" y="217.66666666666669" width="430" height="680.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="CMu-sj-3pU">
+                                        <rect key="frame" x="0.0" y="50" width="430" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CMu-sj-3pU" id="EM6-DC-6tI">
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1sn-fA-Iiu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Grn-nM-Qjo"/>
+                            <constraint firstItem="y2v-Zp-VNf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ba-ft-Lya"/>
                             <constraint firstItem="nec-Fv-cdH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ope-HM-Nbk"/>
                             <constraint firstItem="nec-Fv-cdH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sir-V6-4n8"/>
-                            <constraint firstItem="1sn-fA-Iiu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZPS-n9-Rlz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y2v-Zp-VNf" secondAttribute="bottom" id="bmb-gb-9hk"/>
                             <constraint firstItem="nec-Fv-cdH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dxa-eB-Ih6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y2v-Zp-VNf" secondAttribute="trailing" id="fID-cc-c6I"/>
+                            <constraint firstItem="y2v-Zp-VNf" firstAttribute="top" secondItem="nec-Fv-cdH" secondAttribute="bottom" id="n9j-yZ-8VZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kişiler" id="QwG-pa-fb2">

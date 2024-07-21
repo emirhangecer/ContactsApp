@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Anasayfa: UIViewController, UISearchBarDelegate {
+class Anasayfa: UIViewController {
 
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -17,12 +17,6 @@ class Anasayfa: UIViewController, UISearchBarDelegate {
         searchBar.delegate = self
     }
 
-    @IBAction func buttonDetay(_ sender: Any) {
-        let kisi = Kisiler(kisi_id: 1, kisi_ad: "Emirhan", kisi_tel: "1111")
-        
-        performSegue(withIdentifier: "toDetay", sender: kisi)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay"{
             if let kisi = sender as? Kisiler{
@@ -32,9 +26,10 @@ class Anasayfa: UIViewController, UISearchBarDelegate {
             }
         }
     }
+}
+extension Anasayfa : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("Kisi Ara: \(searchText)")
     }
-    
 }
 
