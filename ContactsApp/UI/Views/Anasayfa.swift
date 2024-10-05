@@ -73,6 +73,17 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
             let kisi = self.kisilerListesi[indexPath.row]
             
             let alert = UIAlertController(title: "Silme İşlemi", message: "\(kisi.kisi_ad!) silinsin mi?", preferredStyle: .alert)
+            let iptalAction = UIAlertAction(title: "İptal", style: .cancel)
+            alert.addAction(iptalAction)
+            
+            let evetAction = UIAlertAction(title: "Evet", style: .destructive){action in
+                print("Kişi sil: \(kisi.kisi_id!)")
+                
+            }
+            alert.addAction(evetAction)
+            
+            self.present(alert, animated: true)
+            
         }
             return UISwipeActionsConfiguration(actions: [silAction])
         }
