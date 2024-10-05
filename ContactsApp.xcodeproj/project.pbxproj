@@ -77,7 +77,6 @@
 				1E95F5602C3B225A00264476 /* UI */,
 				1E95F55F2C3B225400264476 /* Data */,
 				1E95F5512C3B215D00264476 /* Main.storyboard */,
-				1E95F54F2C3B215D00264476 /* Anasayfa.swift */,
 				1E95F5542C3B215E00264476 /* Assets.xcassets */,
 				1E95F5562C3B215E00264476 /* LaunchScreen.storyboard */,
 				1E95F5592C3B215E00264476 /* Info.plist */,
@@ -113,6 +112,7 @@
 		1E95F5622C3B227D00264476 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1E95F54F2C3B215D00264476 /* Anasayfa.swift */,
 				1E95F5632C3B231400264476 /* KisiKayıt.swift */,
 				1E95F5652C3B233E00264476 /* KisiDetay.swift */,
 			);

@@ -65,8 +65,14 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let kisi = kisilerListesi[indexPath.row]
-        print("\(kisi.kisi_ad!)seçildi")
+        print("\(kisi.kisi_ad!) seçildi")
         
     }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let silAction = UIContextualAction(style: .destructive, title: "sil") {contextualAction,view,bool in
+        }
+            return UISwipeActionsConfiguration(actions: [silAction])
+        }
+    
 }
 
