@@ -70,6 +70,9 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let silAction = UIContextualAction(style: .destructive, title: "sil") {contextualAction,view,bool in
+            let kisi = self.kisilerListesi[indexPath.row]
+            
+            let alert = UIAlertController(title: "Silme İşlemi", message: "\(kisi.kisi_ad!) silinsin mi?", preferredStyle: .alert)
         }
             return UISwipeActionsConfiguration(actions: [silAction])
         }
