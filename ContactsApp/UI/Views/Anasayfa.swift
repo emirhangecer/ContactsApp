@@ -30,6 +30,9 @@ class Anasayfa: UIViewController {
         kisilerListesi.append(k2)
         kisilerListesi.append(k3)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        print("Anasaydaya dönüldü")
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay"{
