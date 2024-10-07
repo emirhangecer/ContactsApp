@@ -36,7 +36,7 @@ class Anasayfa: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay"{
-            if let kisi = sender as? Kisiler{
+            if let kisi = sender as? Kisiler {
                 let gidilecekVC = segue.destination as! KisiDetay
                 
                 gidilecekVC.kisi = kisi
@@ -68,7 +68,7 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let kisi = kisilerListesi[indexPath.row]
-        print("\(kisi.kisi_ad!) seçildi")
+        performSegue(withIdentifier: "toDetay", sender: kisi)
         
     }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
